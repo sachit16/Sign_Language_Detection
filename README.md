@@ -32,7 +32,7 @@ This project aims to detect sign language gestures using a combination of Mediap
 
 1. **Clone the repository:**
    ```bash
-   git clone https://github.com/yourusername/sign-language-detection.git
+   git clone https://github.com/sachit16/Sign_Language_Detection
    cd sign-language-detection
    ```
 
@@ -81,7 +81,7 @@ This project aims to detect sign language gestures using a combination of Mediap
 
 1. **Run the real-time gesture recognition script:**
    ```bash
-   python recognize_gesture.py
+   python app.py
    ```
 
 ## Directory Structure
@@ -95,13 +95,19 @@ sign-language-detection/
 │   ├── D/
 │   ├── E/
 │   └── F/
+├── MP_Data/
+│   ├── A/
+│   ├── B/
+│   ├── C/
+│   ├── D/
+│   ├── E/
+│   └── F/
 ├── Logs/
 ├── collect_data.py
 ├── data.py
 ├── function.py
 ├── train_model.py
-├── recognize_gesture.py
-├── model.json
+├── app.py
 ├── model.h5
 ├── README.md
 ```
@@ -121,7 +127,7 @@ sign-language-detection/
    - Trains an LSTM neural network model to recognize gestures based on the sequence of keypoints.
    - Saves the trained model architecture and weights.
 
-4. **`recognize_gesture.py`**
+4. **`app.py`**
    - Loads the trained model and uses it to recognize gestures in real-time from the webcam feed.
    - Displays the recognized gesture and its confidence level on the video feed.
 
